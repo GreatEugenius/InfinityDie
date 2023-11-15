@@ -29,5 +29,6 @@ public class Move : MonoBehaviour
         animator.SetBool("backward", Input.GetKey(KeyCode.S));
         animator.SetBool("left", Input.GetKey(KeyCode.A));
         animator.SetBool("right", Input.GetKey(KeyCode.D));
+        animator.SetBool("jump", Input.GetKey(KeyCode.Space));
     }
 }

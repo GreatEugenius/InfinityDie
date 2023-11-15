@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/lin/Github/InfinityDie
+/Users/lin/Github/InfinityDie/Unity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64952
-Successfully changed project path to: /Users/lin/Github/InfinityDie
-/Users/lin/Github/InfinityDie
+65187
+Successfully changed project path to: /Users/lin/Github/InfinityDie/Unity
+/Users/lin/Github/InfinityDie/Unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,16 +56,16 @@ Successfully changed project path to: /Users/lin/Github/InfinityDie
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7954177728] Host "[IP] 172.17.47.95 [Port] 0 [Flags] 2 [Guid] 1365145669 [EditorId] 1365145669 [Version] 1048832 [Id] OSXEditor(0,Lins-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7954177728] Host "[IP] 172.17.47.95 [Port] 0 [Flags] 2 [Guid] 1876755829 [EditorId] 1876755829 [Version] 1048832 [Id] OSXEditor(0,Lins-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7954177728] Host "[IP] 172.17.47.95 [Port] 0 [Flags] 2 [Guid] 1365145669 [EditorId] 1365145669 [Version] 1048832 [Id] OSXEditor(0,Lins-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7954177728] Host "[IP] 172.17.47.95 [Port] 0 [Flags] 2 [Guid] 1876755829 [EditorId] 1876755829 [Version] 1048832 [Id] OSXEditor(0,Lins-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 1.82 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/lin/Github/InfinityDie/Assets
+[Subsystems] Discovering subsystems at path /Users/lin/Github/InfinityDie/Unity/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M2 Max (high power)
 Metal devices available: 1
@@ -76,18 +76,18 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56177
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000928 seconds.
-- Loaded All Assemblies, in  0.174 seconds
+Registered in 0.000915 seconds.
+- Loaded All Assemblies, in  0.186 seconds
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.140 seconds
-Domain Reload Profiling: 314ms
+- Finished resetting the current domain, in  0.142 seconds
+Domain Reload Profiling: 328ms
 	BeginReloadAssembly (40ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
@@ -96,26 +96,26 @@ Domain Reload Profiling: 314ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (81ms)
-		LoadAssemblies (39ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (89ms)
+		LoadAssemblies (40ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (80ms)
-			TypeCache.Refresh (79ms)
-				TypeCache.ScanAssembly (72ms)
+		AnalyzeDomain (88ms)
+			TypeCache.Refresh (87ms)
+				TypeCache.ScanAssembly (78ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (141ms)
+	FinalizeReload (143ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (104ms)
+		SetupLoadedEditorAssemblies (107ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (71ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			ProcessInitializeOnLoadAttributes (74ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,8 +123,8 @@ Domain Reload Profiling: 314ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.279 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.289 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -132,35 +132,35 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.291 seconds
-Domain Reload Profiling: 570ms
+- Finished resetting the current domain, in  0.293 seconds
+Domain Reload Profiling: 582ms
 	BeginReloadAssembly (64ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (20ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (169ms)
-		LoadAssemblies (99ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (103ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (88ms)
-				TypeCache.ScanAssembly (80ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (93ms)
+				TypeCache.ScanAssembly (83ms)
 			ScanForSourceGeneratedMonoScriptInfo (6ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (291ms)
+	FinalizeReload (293ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (200ms)
+		SetupLoadedEditorAssemblies (207ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadAttributes (164ms)
 			ProcessInitializeOnLoadMethodAttributes (9ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
@@ -172,8 +172,8 @@ Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3076 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 31 unused Assets / (50.6 KB). Loaded Objects now: 3538.
-Memory consumption went from 121.6 MB to 121.5 MB.
-Total: 2.030500 ms (FindLiveObjects: 0.096541 ms CreateObjectMapping: 0.046708 ms MarkObjects: 1.825083 ms  DeleteObjects: 0.061750 ms)
+Memory consumption went from 121.7 MB to 121.7 MB.
+Total: 2.008417 ms (FindLiveObjects: 0.087750 ms CreateObjectMapping: 0.042167 ms MarkObjects: 1.816791 ms  DeleteObjects: 0.061292 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -190,96 +190,72 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 41603.816189 seconds.
-  path: Assets/GhostSamurai_Animset/Animation/katana/Common/CommonCrouch/GhostSamurai_CommonCrouch_Pose.FBX
-  artifactKey: Guid(64333bea65c5be545ad4d17c0b08db2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/CommonCrouch/GhostSamurai_CommonCrouch_Pose.FBX using Guid(64333bea65c5be545ad4d17c0b08db2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccf3bb9f51132785503df2a3ea93861') in 0.016349 seconds
+  Time since last request: 42467.252584 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Model_Unity_Ver1.controller
+  artifactKey: Guid(b2ba515e95ec8439fa6d495f8a6a0dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Model_Unity_Ver1.controller using Guid(b2ba515e95ec8439fa6d495f8a6a0dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28fa825171375dade3822292d3ed4be') in 0.013647 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 163
+Number of asset objects unloaded after import = 28
 ========================================================================
 Received Import Request.
-  Time since last request: 8.833564 seconds.
-  path: Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Idle_Inplace.FBX
-  artifactKey: Guid(c6d497ae14766bb48a6190bf39f2f03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Idle_Inplace.FBX using Guid(c6d497ae14766bb48a6190bf39f2f03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f93e9dd13fac5fc8b3dda1dd698678') in 0.002234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 163
-========================================================================
-Received Import Request.
-  Time since last request: 4.129965 seconds.
-  path: Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_End_Inplace.FBX
-  artifactKey: Guid(54f197a9d97dc1f43b271d896da9589a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_End_Inplace.FBX using Guid(54f197a9d97dc1f43b271d896da9589a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796c5dcb7c82f8a08850ef93b84d8ccf') in 0.001795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 163
-========================================================================
-Received Import Request.
-  Time since last request: 13.334610 seconds.
-  path: Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_Loop_Inplace.FBX
-  artifactKey: Guid(80ec54c51205ab34b9f8cb18e2f0bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_Loop_Inplace.FBX using Guid(80ec54c51205ab34b9f8cb18e2f0bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6413ee676bb99194b977781a238471c2') in 0.001879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 163
-========================================================================
-Received Import Request.
-  Time since last request: 8.981342 seconds.
+  Time since last request: 0.969139 seconds.
   path: Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_Start_1_Inplace.FBX
   artifactKey: Guid(3f096df3aba59db4ab5d54fb7d6a97f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_Start_1_Inplace.FBX using Guid(3f096df3aba59db4ab5d54fb7d6a97f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04009af2d387d7ed80025d42e84e44b') in 0.001869 seconds
+Start importing Assets/GhostSamurai_Animset/Animation/katana/Common/Inplace/GhostSamurai_Common_Jump_Start_1_Inplace.FBX using Guid(3f096df3aba59db4ab5d54fb7d6a97f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04009af2d387d7ed80025d42e84e44b') in 0.010337 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 163
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Thread 0x29d687000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.193 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Thread 0x2a9a7f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.188 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.345 seconds
-Domain Reload Profiling: 537ms
-	BeginReloadAssembly (72ms)
+- Finished resetting the current domain, in  0.342 seconds
+Domain Reload Profiling: 530ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (24ms)
 	RebuildCommonClasses (20ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (11ms)
-	LoadAllAssembliesAndSetupDomain (82ms)
-		LoadAssemblies (99ms)
+	LoadAllAssembliesAndSetupDomain (79ms)
+		LoadAssemblies (95ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (8ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (345ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (342ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (196ms)
+		SetupLoadedEditorAssemblies (183ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (154ms)
+			ProcessInitializeOnLoadAttributes (142ms)
 			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (0ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3542.
-Memory consumption went from 125.1 MB to 125.0 MB.
-Total: 2.317250 ms (FindLiveObjects: 0.101166 ms CreateObjectMapping: 0.051667 ms MarkObjects: 2.132459 ms  DeleteObjects: 0.031458 ms)
+Memory consumption went from 125.2 MB to 125.2 MB.
+Total: 2.115541 ms (FindLiveObjects: 0.108167 ms CreateObjectMapping: 0.044666 ms MarkObjects: 1.933500 ms  DeleteObjects: 0.028875 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -295,3 +271,391 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 42.637287 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace
+  artifactKey: Guid(deab926ffd858ce48af4097a36ee99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace using Guid(deab926ffd858ce48af4097a36ee99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fad0b3722d5f3c5edbbeb7c0093b1fe') in 0.001475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.018862 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Loop_Root.FBX
+  artifactKey: Guid(367fdf9ccffe9a2488bd30e05ec00147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Loop_Root.FBX using Guid(367fdf9ccffe9a2488bd30e05ec00147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35910a87fbbd518203c1871e06a5e06d') in 0.023154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 0.695418 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Start_Root.FBX
+  artifactKey: Guid(92d30f35ed0ad3745905cb4c04274a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Start_Root.FBX using Guid(92d30f35ed0ad3745905cb4c04274a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7044e75d0bea083b6268f40fd8c35c') in 0.003102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 24.533114 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_End_Inplace.FBX
+  artifactKey: Guid(4c0acc043cdafb04cb29f8187edbcfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_End_Inplace.FBX using Guid(4c0acc043cdafb04cb29f8187edbcfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a472fe3ad2566cb67e87d5ac6376ad61') in 0.002752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 2.048316 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Loop_Inplace.FBX
+  artifactKey: Guid(cfb019d410ec3e548bdfbf114377a8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Loop_Inplace.FBX using Guid(cfb019d410ec3e548bdfbf114377a8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d792f2fd1e8c393bd5759d26bb1404e') in 0.003825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 0.631545 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Start_1_Inplace.FBX
+  artifactKey: Guid(945b55edfc0ad224ca4acd04e340617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Start_1_Inplace.FBX using Guid(945b55edfc0ad224ca4acd04e340617f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12032dc928f38030964c1711422384e') in 0.002308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 3.971102 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Start_Inplace.FBX
+  artifactKey: Guid(29d028d8e2dc51542b463056cc31dc6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Jump_Start_Inplace.FBX using Guid(29d028d8e2dc51542b463056cc31dc6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2904fad267f649b19c216f4b015a27') in 0.003763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f02f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.197 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.357 seconds
+Domain Reload Profiling: 555ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
+		LoadAssemblies (104ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (357ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (193ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (148ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3545.
+Memory consumption went from 130.4 MB to 130.4 MB.
+Total: 2.045791 ms (FindLiveObjects: 0.113750 ms CreateObjectMapping: 0.048167 ms MarkObjects: 1.849958 ms  DeleteObjects: 0.033583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 57.531159 seconds.
+  path: Assets/move.cs
+  artifactKey: Guid(f284f9c4d7f5c46c5b624ead5ce733b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/move.cs using Guid(f284f9c4d7f5c46c5b624ead5ce733b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e03e69e5342384b3f23d6119071314') in 0.001112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.978654 seconds.
+  path: Assets/move.cs
+  artifactKey: Guid(f284f9c4d7f5c46c5b624ead5ce733b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/move.cs using Guid(f284f9c4d7f5c46c5b624ead5ce733b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79f69413d80b04a0200e36526cce3df') in 0.000327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f02f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.236 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.339 seconds
+Domain Reload Profiling: 575ms
+	BeginReloadAssembly (70ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (339ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (180ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3548.
+Memory consumption went from 135.5 MB to 135.5 MB.
+Total: 1.996375 ms (FindLiveObjects: 0.088541 ms CreateObjectMapping: 0.045083 ms MarkObjects: 1.833917 ms  DeleteObjects: 0.028417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f02f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.195 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.336 seconds
+Domain Reload Profiling: 531ms
+	BeginReloadAssembly (68ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (88ms)
+		LoadAssemblies (103ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (336ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (182ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (140ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3551.
+Memory consumption went from 140.8 MB to 140.7 MB.
+Total: 2.064958 ms (FindLiveObjects: 0.115750 ms CreateObjectMapping: 0.047250 ms MarkObjects: 1.873292 ms  DeleteObjects: 0.028292 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 33.811589 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_F_Loop_Inplace.FBX
+  artifactKey: Guid(0cb689c84df043547ae36efd536396d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_F_Loop_Inplace.FBX using Guid(0cb689c84df043547ae36efd536396d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9067e3084fd315b6b1f3291494947025') in 0.014718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 1.344762 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_B_Inplace.FBX
+  artifactKey: Guid(06c9947ca0b5f594c9f125cb5632fb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_B_Inplace.FBX using Guid(06c9947ca0b5f594c9f125cb5632fb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0684c75c48d2e50eafa2c7a3c554ae68') in 0.002196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 15.895718 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_R_Inplace.FBX
+  artifactKey: Guid(2bb0953858c8c334caf679e92cf360e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_R_Inplace.FBX using Guid(2bb0953858c8c334caf679e92cf360e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a052f8679ad2ffd61fc6fb835c9de80') in 0.002537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 8.660666 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_L_Inplace.FBX
+  artifactKey: Guid(ddb17113459f0774aa09eff0392b4ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_L_Inplace.FBX using Guid(ddb17113459f0774aa09eff0392b4ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d42e10bd4377da9da640a63e23fad43') in 0.002284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Import Request.
+  Time since last request: 36.704417 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_B_Inplace.FBX
+  artifactKey: Guid(06c9947ca0b5f594c9f125cb5632fb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_B_Inplace.FBX using Guid(06c9947ca0b5f594c9f125cb5632fb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356f8a30ae97eb42e92992cbca6cd55d') in 0.003301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16f02f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.195 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.346 seconds
+Domain Reload Profiling: 541ms
+	BeginReloadAssembly (70ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (346ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (189ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3554.
+Memory consumption went from 146.0 MB to 146.0 MB.
+Total: 2.037583 ms (FindLiveObjects: 0.095667 ms CreateObjectMapping: 0.044458 ms MarkObjects: 1.865792 ms  DeleteObjects: 0.031334 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 86.926329 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_F_Loop_Inplace.FBX
+  artifactKey: Guid(0cb689c84df043547ae36efd536396d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Inplace/GhostSamurai_APose_Strafe_Walk_F_Loop_Inplace.FBX using Guid(0cb689c84df043547ae36efd536396d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ca4825c328e56cf2cc87bfa6529537') in 0.014506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 163

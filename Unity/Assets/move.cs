@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
     private string animationAttackName3 = "GhostSamurai_APose_Attack01_3_Inplace";
     private string animationAttackName4 = "GhostSamurai_APose_Attack01_4_Inplace";
     private string animationAttackName5 = "GhostSamurai_APose_Hit_F_Inplace";
+    private string animationAttackName6 = "GhostSamurai_APose_JumpAttack02_Inplace";
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -48,20 +49,22 @@ public class Move : MonoBehaviour
         animator.SetBool("right", Input.GetKey(KeyCode.D));
         animator.SetBool("jump", Input.GetKey(KeyCode.Space));
         animator.SetBool("airAttack", Input.GetKey(KeyCode.R));
+        animator.SetBool("isAttack", Input.GetKey(KeyCode.T));
         animator.SetBool("beenHit", Input.GetKey(KeyCode.B));
     }
 
     void run()
     {
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            currentSpeed = defaultSpeed * 3;
-        }
-        else if (speed != 0.0f)
-        {
-            currentSpeed = defaultSpeed;
-        }
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    currentSpeed = defaultSpeed * 3;
+        //}
+        //else if (speed != 0.0f)
+        //{
+        //    currentSpeed = defaultSpeed;
+        //}
+        animator.SetBool("isRun", Input.GetKey(KeyCode.LeftShift));
 
         animator.SetBool("isRunForward", Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift));
         animator.SetBool("isRunBackward", Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift));
@@ -75,7 +78,8 @@ public class Move : MonoBehaviour
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName2) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName3) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName4) ||
-            animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName5))
+            animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName5) ||
+            animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName6))
         {
             speed = 0.0f;
         }

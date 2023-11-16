@@ -33,10 +33,14 @@ public class Move : MonoBehaviour
     {
         isStopMoving();
         Debug.Log(speed);
-        float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
 
-        transform.Translate(horizontal, 0, vertical);
+            float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+
+            transform.Translate(horizontal, 0, vertical);
+        }
 
         animator.SetBool("forward", Input.GetKey(KeyCode.W));
         animator.SetBool("backward", Input.GetKey(KeyCode.S));

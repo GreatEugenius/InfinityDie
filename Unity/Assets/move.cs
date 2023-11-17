@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Move : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Move : MonoBehaviour
     public float defaultSpeed = 4.0f;
     public float speed;
     public float currentSpeed;
+
     public bool isDefense = false;
     private Animator animator;
 
@@ -26,6 +28,12 @@ public class Move : MonoBehaviour
     private string animationAttackName4 = "GhostSamurai_APose_Attack01_4_Inplace";
     private string animationAttackName5 = "GhostSamurai_APose_Hit_F_Inplace";
     private string animationAttackName6 = "GhostSamurai_APose_JumpAttack02_Inplace";
+
+    public GameObject HP_Bar;
+    public Image HP_Image;
+    public float HP = 20;
+    public float HP_Percent;
+    public float Max_HP;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -35,6 +43,13 @@ public class Move : MonoBehaviour
 
         speed = defaultSpeed;
         currentSpeed = defaultSpeed;
+
+        HP_Bar = GameObject.Find("Black_HealthBar");
+        HP_Image = HP_Bar.GetComponent<Image>();
+        Max_HP = HP;
+        HP_Percent = HP / Max_HP;
+        HP_Image.fillAmount = HP_Percent;
+        Debug.Log(Max_HP);
     }
 
     // Update is called once per frame
@@ -45,19 +60,46 @@ public class Move : MonoBehaviour
         isDefense = defense();
 
         attack();
+
+        updata_HP();
+    }
+
+    void updata_HP()
+    {
+        if (HP <= 0) {
+            blackAnimator.SetBool("isDie", true);
+        }
+        HP_Percent = HP / Max_HP;
+        HP_Image.fillAmount = HP_Percent;
     }
 
     void walk()
     {
-        isStopMoving();
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.P))
         {
-
-            float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-            float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-
-            transform.Translate(horizontal, 0, vertical);
+            blackAnimator.SetBool("isDie", false);
+            HP = Max_HP;
         }
+        isStopMoving();
+
+        float horizontal = 0, vertical = 0;
+        if (Input.GetKey(KeyCode.W))
+        {
+            vertical = speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            vertical = -speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            horizontal = speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            horizontal = -speed * Time.deltaTime;
+        }
+        transform.Translate(horizontal, 0, vertical);
 
         animator.SetBool("forward", Input.GetKey(KeyCode.W));
         animator.SetBool("backward", Input.GetKey(KeyCode.S));
@@ -144,11 +186,13 @@ public class Move : MonoBehaviour
             {
                 blackAnimator.SetBool("beenHit", true);
                 isAttacked = true;
+                HP -= 2;
             }
             else
             {
                 blackAnimator.SetBool("defenseHit", true);
                 isDefenseHit = true;
+                HP -= 0.3f;
             }
         }
 
@@ -156,12 +200,14 @@ public class Move : MonoBehaviour
         {
             blackAnimator.SetBool("beenHit", true);
             isAttacked = true;
+            HP -= 1;
         }
 
         if (stateInfo.IsName(animationAttackName6) && currentAnimationTime < 0.5)
         {
             blackAnimator.SetBool("beenHit", true);
             isAttacked = true;
+            HP -= 3;
         }
     }
 

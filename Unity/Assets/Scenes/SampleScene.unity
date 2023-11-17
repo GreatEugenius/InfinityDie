@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657737, g: 0.49641258, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465778, g: 0.49641317, b: 0.5748182, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -410,6 +410,11 @@ MonoBehaviour:
   speed: 5
   currentSpeed: 0
   isDefense: 0
+  HP_Bar: {fileID: 0}
+  HP_Image: {fileID: 0}
+  HP: 20
+  HP_Percent: 0
+  Max_HP: 0
 --- !u!4 &567781469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
@@ -513,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.07186722, b: 0.07186722, a: 1}
+  m_Color: {r: 0.5019608, g: 0.07186722, b: 0.07186722, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -620,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.11
+      value: 4.2947197
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -628,11 +633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8
+      value: 2.7425964
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.41604728
+      value: 0.67523754
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -640,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.90934306
+      value: -0.7376003
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.z
@@ -652,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -130.829
+      value: -95.055
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -803,7 +808,7 @@ GameObject:
   - component: {fileID: 873821769}
   - component: {fileID: 873821768}
   m_Layer: 0
-  m_Name: HealthBar
+  m_Name: White_HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.08719444, a: 1}
+  m_Color: {r: 0.22352941, g: 1, b: 0.078431375, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1322,7 +1327,7 @@ GameObject:
   - component: {fileID: 1408266315}
   - component: {fileID: 1408266314}
   m_Layer: 0
-  m_Name: HealthBar
+  m_Name: Black_HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1360,7 +1365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.08719444, a: 1}
+  m_Color: {r: 0, g: 0.44313726, b: 0.7372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1372,7 +1377,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1575,7 +1580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.07186722, b: 0.07186722, a: 1}
+  m_Color: {r: 0.5019608, g: 0.07186722, b: 0.07186722, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1621,6 +1626,11 @@ MonoBehaviour:
   speed: 0
   currentSpeed: 0
   isDefense: 0
+  HP_Bar: {fileID: 0}
+  HP_Image: {fileID: 0}
+  HP: 10
+  HP_Percent: 0
+  Max_HP: 0
 --- !u!4 &1882918261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
@@ -1760,13 +1770,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912100840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08689593, y: -0.8900471, z: 0.16811617, w: 0.41473162}
-  m_LocalPosition: {x: 6.69, y: 2.82, z: 4.84}
+  m_LocalRotation: {x: 0.122909896, y: -0.7405758, z: 0.12588091, w: 0.64853275}
+  m_LocalPosition: {x: 8.13, y: 3, z: 3.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 21.798, y: -130.213, z: -0.94}
+  m_LocalEulerAnglesHint: {x: 20.235, y: -97.786, z: -1.146}
 --- !u!114 &1912100844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,7 +1803,7 @@ GameObject:
   - component: {fileID: 1976288793}
   - component: {fileID: 1976288792}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: White_HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -141,7 +141,7 @@ public class Move1 : MonoBehaviour
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         float currentAnimationTime = stateInfo.normalizedTime;
 
-        if (stateInfo.IsName(animationAttackName1) && currentAnimationTime < 0.5)
+        if (stateInfo.IsName(animationAttackName1) && currentAnimationTime < 0.3)
         {
             if (whiteMove.isDefense == false)
             {
@@ -155,7 +155,7 @@ public class Move1 : MonoBehaviour
             }
         }
 
-        if (stateInfo.IsName(animationAttackName2) && currentAnimationTime < 0.5)
+        if (stateInfo.IsName(animationAttackName2) && currentAnimationTime < 0.3)
         {
             whiteAnimator.SetBool("beenHit", true);
             isAttacked = true;

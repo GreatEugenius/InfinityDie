@@ -5,19 +5,33 @@ using UnityEngine;
 public class Move1 : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float defaultSpeed = 3.0f;
+    public float defaultSpeed = 4.0f;
     public float speed;
     public float currentSpeed;
+    public bool isDefense = false;
     private Animator animator;
+
+    private bool isAttacked = false;
+    private float attackTimer = 0;
+ 
+    private GameObject whiteObject;
+    private Animator whiteAnimator;
+    private Move whiteMove;
+
     private string animationAttackName1 = "GhostSamurai_APose_Attack01_1_ALL_Inplace";
     private string animationAttackName2 = "GhostSamurai_APose_Attack01_2_Inplace";
     private string animationAttackName3 = "GhostSamurai_APose_Attack01_3_Inplace";
     private string animationAttackName4 = "GhostSamurai_APose_Attack01_4_Inplace";
     private string animationAttackName5 = "GhostSamurai_APose_Hit_F_Inplace";
     private string animationAttackName6 = "GhostSamurai_APose_JumpAttack02_Inplace";
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        whiteObject = GameObject.Find("Model_Unity_Ver1");
+        whiteAnimator = whiteObject.GetComponent<Animator>();
+        whiteMove = whiteObject.GetComponent<Move>();
+
         speed = defaultSpeed;
         currentSpeed = defaultSpeed;
     }
@@ -27,7 +41,9 @@ public class Move1 : MonoBehaviour
     {
         walk();
 
-        run();
+        isDefense = defense();
+
+        attack();
     }
 
     void walk()
@@ -48,26 +64,28 @@ public class Move1 : MonoBehaviour
         animator.SetBool("right", Input.GetKey(KeyCode.RightArrow));
         animator.SetBool("jump", Input.GetKey(KeyCode.J));
         animator.SetBool("airAttack", Input.GetKey(KeyCode.K));
-        animator.SetBool("beenHit", Input.GetKey(KeyCode.L));
+        //animator.SetBool("beenHit", Input.GetKey(KeyCode.L));
     }
 
-    void run()
+    bool defense()
     {
-
-        //if (Input.GetKey(KeyCode.LeftShift))
-        //{
-        //    currentSpeed = defaultSpeed * 3;
-        //}
-        //else if (speed != 0.0f)
-        //{
-        //    currentSpeed = defaultSpeed;
-        //}
         animator.SetBool("isRun", Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isRunForward", Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isRunBackward", Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isRunLeft", Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isRunRight", Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isAttack", Input.GetKey(KeyCode.H));
+
+        if (animator.GetBool("isRun") || animator.GetBool("isRunForward") ||
+            animator.GetBool("isRunBackward") || animator.GetBool("isRunRight") ||
+            animator.GetBool("isRunLeft"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     void isStopMoving()
@@ -81,6 +99,10 @@ public class Move1 : MonoBehaviour
 
         {
             speed = 0.0f;
+        }
+        else if(isDefense == true)
+        {
+            speed = 1.0f;
         }
         else
         {
@@ -97,6 +119,49 @@ public class Move1 : MonoBehaviour
         else
         {
             return true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        float currentAnimationTime = stateInfo.normalizedTime;
+
+        if (stateInfo.IsName(animationAttackName1) && currentAnimationTime < 0.5)
+        {
+            if (whiteMove.isDefense == false)
+            {
+                whiteAnimator.SetBool("beenHit", true);
+                isAttacked = true;
+            }
+        }
+
+        if (stateInfo.IsName(animationAttackName2) && currentAnimationTime < 0.5)
+        {
+            whiteAnimator.SetBool("beenHit", true);
+            isAttacked = true;
+        }
+
+        if (stateInfo.IsName(animationAttackName6) && currentAnimationTime < 0.5)
+        {
+            whiteAnimator.SetBool("beenHit", true);
+            isAttacked = true;
+        }
+    }
+
+    void attack()
+    {
+        if (isAttacked == true)
+        {
+            attackTimer += Time.deltaTime;
+        }
+
+        if (attackTimer > 1)
+        {
+            attackTimer = 0;
+            isAttacked = false;
+            whiteAnimator.SetBool("beenHit", false);
         }
     }
 }

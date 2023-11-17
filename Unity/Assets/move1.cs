@@ -30,7 +30,7 @@ public class Move1 : MonoBehaviour
 
     public GameObject HP_Bar;
     public Image HP_Image;
-    public float HP = 20;
+    public float HP;
     public float HP_Percent;
     public float Max_HP;
     void Start()
@@ -45,6 +45,7 @@ public class Move1 : MonoBehaviour
 
         HP_Bar = GameObject.Find("White_HealthBar");
         HP_Image = HP_Bar.GetComponent<Image>();
+        HP = 20;
         Max_HP = HP;
         HP_Percent = HP / Max_HP;
         HP_Image.fillAmount = HP_Percent;
@@ -145,7 +146,7 @@ public class Move1 : MonoBehaviour
 
     void isStopMoving()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName1) ||
+        if (animator.GetBool("isDie") || animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName1) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName2) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName3) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName4) ||

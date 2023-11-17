@@ -144,7 +144,7 @@ public class Move : MonoBehaviour
 
     void isStopMoving()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName1) ||
+        if (animator.GetBool("isDie") || animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName1) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName2) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName3) ||
             animator.GetCurrentAnimatorStateInfo(0).IsName(animationAttackName4) ||

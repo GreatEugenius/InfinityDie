@@ -13,7 +13,9 @@ public class Move1 : MonoBehaviour
 
     private bool isAttacked = false;
     private float attackTimer = 0;
- 
+    private bool isDefenseHit = false;
+    private float defenseHitTimer = 0;
+
     private GameObject whiteObject;
     private Animator whiteAnimator;
     private Move whiteMove;
@@ -76,6 +78,17 @@ public class Move1 : MonoBehaviour
         animator.SetBool("isRunRight", Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.RightShift));
         animator.SetBool("isAttack", Input.GetKey(KeyCode.H));
 
+        if (isDefenseHit == true)
+        {
+            defenseHitTimer += Time.deltaTime;
+            if (defenseHitTimer > 0.1)
+            {
+                whiteAnimator.SetBool("defenseHit", false);
+                defenseHitTimer = 0;
+                isDefenseHit = false;
+            }
+        }
+
         if (animator.GetBool("isRun") || animator.GetBool("isRunForward") ||
             animator.GetBool("isRunBackward") || animator.GetBool("isRunRight") ||
             animator.GetBool("isRunLeft"))
@@ -134,6 +147,11 @@ public class Move1 : MonoBehaviour
             {
                 whiteAnimator.SetBool("beenHit", true);
                 isAttacked = true;
+            }
+            else
+            {
+                whiteAnimator.SetBool("defenseHit", true);
+                isDefenseHit = true;
             }
         }
 

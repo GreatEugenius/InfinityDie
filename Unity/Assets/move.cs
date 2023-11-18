@@ -186,7 +186,7 @@ public class Move : MonoBehaviour
             {
                 blackAnimator.SetBool("beenHit", true);
                 isAttacked = true;
-                HP -= 2;
+                HP -= 0.7f;
             }
             else
             {
@@ -200,14 +200,29 @@ public class Move : MonoBehaviour
         {
             blackAnimator.SetBool("beenHit", true);
             isAttacked = true;
-            HP -= 1;
+            if (blackMove.isDefense == false)
+            {
+                HP -= 1.3f;
+            }
+            else
+            {
+                HP -= 1f;
+            }
         }
 
         if (stateInfo.IsName(animationAttackName6) && currentAnimationTime < 0.5)
         {
             blackAnimator.SetBool("beenHit", true);
             isAttacked = true;
-            HP -= 3;
+
+            if (blackMove.isDefense == false)
+            {
+                HP -= 2.8f;
+            }
+            else
+            {
+                HP -= 1.5f;
+            }
         }
     }
 

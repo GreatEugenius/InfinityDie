@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465778, g: 0.49641317, b: 0.5748182, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657737, g: 0.49641258, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2947197
+      value: -14.2
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -633,7 +633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7425964
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -673,6 +673,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1976288791}
+    - targetCorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1912100843}
     - targetCorrespondingSourceObject: {fileID: 400116, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       insertIndex: 0
       addedObject: {fileID: 419037788}
@@ -776,12 +779,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870965323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0925114, y: 0.6871841, z: -0.068907306, w: 0.7172667}
-  m_LocalPosition: {x: -6.26, y: 2.32, z: 0.06}
+  m_LocalRotation: {x: 0.11521165, y: 0.07351321, z: 0.0057317466, w: 0.99060047}
+  m_LocalPosition: {x: -0.56312156, y: 2.32, z: -3.017979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1882918261}
   m_LocalEulerAnglesHint: {x: 13.145, y: 87.738, z: 1.665}
 --- !u!114 &870965327
 MonoBehaviour:
@@ -1770,12 +1773,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912100840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.122909896, y: -0.7405758, z: 0.12588091, w: 0.64853275}
-  m_LocalPosition: {x: 8.13, y: 3, z: 3.24}
+  m_LocalRotation: {x: 0.17584318, y: -0.021706581, z: -0.005658865, w: 0.9841626}
+  m_LocalPosition: {x: 0.15754801, y: 3, z: -3.86419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 567781469}
   m_LocalEulerAnglesHint: {x: 20.235, y: -97.786, z: -1.146}
 --- !u!114 &1912100844
 MonoBehaviour:
@@ -1907,7 +1910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.19
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1915,7 +1918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1967,6 +1970,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1403528370}
+    - targetCorrespondingSourceObject: {fileID: 400160, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870965326}
     - targetCorrespondingSourceObject: {fileID: 400116, guid: 5ae02fce3fd08f140888c4d8f1f2cfc3, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1681147330}
@@ -1999,6 +2005,4 @@ SceneRoots:
   - {fileID: 1078340053}
   - {fileID: 770666114}
   - {fileID: 2109923512}
-  - {fileID: 1912100843}
-  - {fileID: 870965326}
   - {fileID: 718987394}

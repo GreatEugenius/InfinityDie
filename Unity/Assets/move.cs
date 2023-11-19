@@ -210,7 +210,7 @@ public class Move : MonoBehaviour
             }
         }
 
-        if (stateInfo.IsName(animationAttackName6) && currentAnimationTime < 0.5)
+        if (stateInfo.IsName(animationAttackName6) && currentAnimationTime < 0.7 && currentAnimationTime > 0.3)
         {
             blackAnimator.SetBool("beenHit", true);
             isAttacked = true;

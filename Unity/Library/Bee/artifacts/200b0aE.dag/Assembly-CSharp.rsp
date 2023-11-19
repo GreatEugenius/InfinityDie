@@ -356,6 +356,11 @@
 "Assets/GetDataFromPython.cs"
 "Assets/move.cs"
 "Assets/move1.cs"
+"Assets/SciFiFacilitySector43/Scripts/Door.cs"
+"Assets/SciFiFacilitySector43/Scripts/DoorTrigger.cs"
+"Assets/SciFiFacilitySector43/Scripts/FPController.cs"
+"Assets/SciFiFacilitySector43/Scripts/Occluder.cs"
+"Assets/SciFiFacilitySector43/Scripts/OccluderTrigger.cs"
 -langversion:9.0
 
 /deterministic
